@@ -45,7 +45,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #d0cccc;
+  background: white;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -1027,7 +1027,7 @@ position: absolute;
 }
 
 .s3co5{
-  top: 287px;
+  top: 65px;
 }
 
 .s3co6{
@@ -1472,6 +1472,11 @@ border-radius: 10px;
     height: 101%;
 }
 
+.sideimg1{
+  /* position: absolute; */
+  display: none;
+}
+
 .aboutBook{
   position: relative;
   top: 70px;
@@ -1558,7 +1563,7 @@ border-radius: 10px;
 
 .actSupportContent{
   position: absolute;
-  width: 44%;
+  width: 46%;
   top: 131px;
   left: 48.1%;
   font-size: 14.5px;
@@ -1809,6 +1814,18 @@ tr:nth-child(even) {
   text-align: center;
 }
 
+.projectRubrictitle2 {
+  position: absolute;
+  top: 102px;
+  left: 247px;
+  width: 291px;
+  font-size: 62px;
+   font-family:'poppinsm';
+  color: #597CBE91;
+  font-weight: bold;
+  text-align: center;
+}
+
 .projectRubricImg{
   position: absolute;
   width: 75%;
@@ -1842,7 +1859,7 @@ tr:nth-child(even) {
      top: 65px;
      left: 31%;
      width: 17%;
-     font-family: 'poppinsItalic';
+     font-family: 'poppinsm';
      font-size: 14px;
      color: black;
      line-height: 20px;
@@ -1910,7 +1927,7 @@ tr:nth-child(even) {
 .intenseTxt1{
   position: relative;
   top: 1px;
-  left: 40%;
+  left: 80%;
 }
 
 .intenseImgDiv{
@@ -1976,10 +1993,10 @@ tr:nth-child(even) {
 .intenseTxt2{
   position: relative;
   top: 223px;
-  left: 23%;
+  left: 64.5%;
 }
 
-@media (min-width:481px) and (max-width:800px) {
+@media (min-width:481px) and (max-width:1024px) {
   #bk6ch15ss2{
     max-width: 768px;
     min-height: 1024px;
@@ -1987,10 +2004,25 @@ tr:nth-child(even) {
   .contentContainer {
     height: 100%;
   }
+
+  .sideimg{
+  top: -8px;
+  width: 31%;
+  height: 70%;
+}
+
+.sideimg1{
+  position: absolute;
+  top: 447px;
+  width: 17%;
+  height: 57%;
+  display: block;
+}
+
   .awardDiv {
     top: auto;
     left: 85px;
-    bottom: 70px;
+    bottom: 83px;
   }
   .subtitleTxt2 {
         top: 750px;
@@ -2059,6 +2091,7 @@ tr:nth-child(even) {
     top: 186px;
     width: 61%;
   }
+
   .content4{
     top: 190px;
   }
@@ -2104,6 +2137,17 @@ tr:nth-child(even) {
   .act2 {
     top: 115px;
   }
+
+  .intenseTxt1{
+    top: 1px;
+    left: 75%;
+  }
+
+  .intenseTxt2 {
+    top: 223px;
+    left: 55%;
+}
+
   .projectTemplateImg {
     position: absolute;
     width: 75%;
@@ -2127,6 +2171,24 @@ tr:nth-child(even) {
     top: 20px;
     left: 20%;
   }
+
+  .projectRubrictitle2 {
+    top: 20px;
+    left: 49%;
+  }
+
+  .aboutBook{
+    top: 70px;
+    left: 31%;
+    width: 22%;
+    font-family: 'poppinsm';
+    font-size: 13px;
+  }
+
+  .morePageUl{
+    left: 28%;
+  }
+
   .section4actSupportHeader2 {
     left: 42.1%;
     width: 424px;
@@ -2147,7 +2209,124 @@ tr:nth-child(even) {
     width: 520px;
 }
 .section2Content1 {
-    top: 266px;
+    top: 157px;
 }
 
+.s2con1{
+  top: 272px;
+}
+
+}
+
+.fontSize20{
+  font-size: 20px;
+}
+
+.sh1{
+  top: 18px;
+}
+
+.sh2{
+  top: 73px;
+}
+
+.sh3{
+  top: 190px;
+  font-size: 50px;
+}
+
+.sh4_1{
+  top: 237px;
+}
+
+.sh4{
+  top: 263px;
+}
+
+.sh5{
+  top: 305px;
+}
+
+.sh6{
+  top: 345px;
+}
+
+.ho1{
+  top: 200px;
+}
+
+.ho2{
+  top: 249px;
+}
+
+.ho3{
+  top: 315px;
+}
+
+.ho4{
+  top: 344px;
+}
+
+.ho5{
+  top: 352px;
+}
+
+.ho6{
+  top: 254px;
+}
+
+.ho7{
+  top: 75px;
+}
+
+.sm1{
+  top: -5px;
+}
+
+.sm2{
+  top: 49px;
+}
+
+.sm3{
+  top: 53px;
+}
+
+.sm4{
+  top: 141px;
+}
+
+.sm5{
+  top: 202px;
+}
+
+.sm6{
+  top: 203px;
+}
+
+.sm7{
+  top: 249px;
+}
+
+.sm8{
+  top: 278px;
+}
+
+.sm9{
+  top: 308px;
+}
+
+.pointers{
+  pointer-events: none;
+}
+
+.hookSummary{
+  position: absolute;
+    width: 90%;
+    top: 18px;
+}
+
+.chap4{
+  position: absolute;
+    width: 100%;
+    top: -5px;
 }

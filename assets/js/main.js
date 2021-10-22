@@ -11,6 +11,8 @@ $(document).on('click keydown', '.BtnText1', function (event) {
         $(".Slides").css("display","none");
         $(".BtnText1").removeClass("active")
         $(this).addClass("active")
+        $(".BtnText1").removeClass("pointers")
+        $(this).addClass("pointers")
         btnClicked = $(this).attr("slideNumber");
         $(".slides"+ btnClicked).css("display","block");
     }
@@ -33,6 +35,8 @@ $(document).on('click keydown', '.section2Btns', function (event) {
     if(event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)){
     	$(".section2Btns").removeClass("slide2activebtn")
         $(this).addClass("slide2activebtn")
+        $(".section2Btns").removeClass("pointers")
+        $(this).addClass("pointers")
         $('.section2insideSlides').css("display", "none");
         section2Btn = $(this).attr("section2Buttons");
         $(".s2Slide" + section2Btn).css("display", "block");
@@ -73,6 +77,8 @@ $(document).on('click keydown', '.agendaText2', function (event) {
     if(event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)){
     	$(".agendaText2").removeClass("slide3activebtn")
         $(this).addClass("slide3activebtn")
+        $(".agendaText2").removeClass("pointers")
+        $(this).addClass("pointers")
         $('.section3ContentContainer').css("display", "none");
         section3Btn = $(this).attr("section3Buttons");
         $(".s3Slide" + section3Btn).css("display", "block");
@@ -97,6 +103,8 @@ $(document).on('click keydown', '.agendaText3', function (event) {
     if(event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)){
     	$(".agendaText3").removeClass("slide4activebtn")
         $(this).addClass("slide4activebtn")
+        $(".agendaText3").removeClass("pointers")
+        $(this).addClass("pointers")
         $('.section4Container').css("display", "none");
         section4Btn = $(this).attr("slide4Buttons");
         $(".s4Slides" + section4Btn).css("display", "block");
