@@ -1,0 +1,29 @@
+
+@media (max-width: 990px) {
+    .left-side-bar{
+        display: none;
+    }
+    .content-panel{
+        margin: auto;
+    }
+    .card-wrap .card{
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-side-bar{
+        display: none;
+    }
+}
+@media (max-width: 730px) {
+    .card-body a.card-text{
+        font-size: 12px;
+    }
+    .card-body p.card-text{
+        font-size: 11px;
+    }
+    .card-back{
+        font-size: 9px;
+    }
+}
