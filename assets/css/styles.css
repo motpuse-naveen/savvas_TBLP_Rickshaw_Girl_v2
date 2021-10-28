@@ -161,7 +161,7 @@ body, html {
 
 .left-side-bar {
     height: 80%;
-    width: 202px;
+    width: 220px;
     position: fixed;
     top: 95px;
     left: 0;
@@ -177,13 +177,12 @@ body, html {
     position: absolute;
     background-color: #919E57;
     border-radius: 50%;
-    width: 313px;
-    height: 313px;
-    left: -112px;
-    top: -27px;
+    width: 250px;
+    height: 250px;
+    left: -50px;
+    top: -40px;
     z-index: -1;
 }
-
 .side-nav ul {
     margin-left: 30px;
     margin-top: 18px;
@@ -191,19 +190,17 @@ body, html {
 
 .side-nav ul li {
     font-family: 'poppins-regular';
-    font-size: 15px;
+    font-size: 14px;
     color: #03030280;
-    padding: 6px 60px;
+    padding: 6px 55px;
     padding-left: 0px;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
-
 .side-nav ul li a {
     text-decoration: none;
     color: #03030280;
     font-weight: 600;
 }
-
 .side-nav ul li a:hover {
     color: #030302;
 }
@@ -214,6 +211,36 @@ body, html {
 
 .side-nav ul li a:hover, .side-nav ul li a.active {
     color: #030302;
+}
+.side-nav-circle.br{
+    background-color: #EBC979;
+    color: #00000080;
+}
+.side-nav-circle.dr{
+    background-color:#2D579F;
+    color:#FFFFFF80;
+}
+.side-nav-circle.ar{
+    background-color:#963131;
+    color:#FFFFFF80;
+}
+.side-nav.br ul li{
+    color: #00000080;
+}
+.side-nav.br ul li a{
+    color: #00000080;
+}
+.side-nav.br ul li a:hover, .side-nav.br ul li a.active{
+    color: #030302;
+}
+.side-nav.dr ul li, .side-nav.ar ul li{
+    color: #FFFFFF80;;
+}
+.side-nav.dr ul li a, .side-nav.ar ul li a{
+    color: #FFFFFF80;;
+}
+.side-nav.dr ul li a:hover, .side-nav.dr ul li a.active, .side-nav.ar ul li a:hover, .side-nav.ar ul li a.active{
+    color: #FFFFFF;
 }
 
 .side-disclamer {
@@ -244,7 +271,7 @@ body, html {
 }
 
 .content-panel {
-    margin-left: 205px;
+    margin-left: 220px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -266,115 +293,6 @@ body, html {
     font-size: 15px;
     color:#ffffff;
     margin: 0 5px;
-}
-
-.card-wrap.row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.card-wrap.row .col {
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.card-wrap.row .card {
-    border-radius: 10px;
-    border-width: 2px;
-    box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
-}
-
-.card-body {
-    text-align: center;
-    padding: 10px 0px;
-    height: 70px;
-    line-height: 1.5em;
-    overflow: hidden;
-}
-
-.card-body a.card-text {
-    font-family: 'poppins-semibold';
-    color: #0072EE;
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.card-body p.card-text {
-    font-family: 'poppins-light';
-    font-size: 15px;
-}
-
-.card .imageText {
-    color: #FFFFFF;
-    position: absolute;
-    margin: 10px;
-}
-
-.card-cover-img {
-    height: 206px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-}
-
-.card-cover-img.img1 {
-    background: url(../images/img1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-cover-img.img2 {
-    background: url(../images/img2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-cover-img.img3 {
-    background: url(../images/img3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-cover-img.img4 {
-    background: url(../images/img4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-cover-img.img5 {
-    background: url(../images/img5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-img, .card-img-top {
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-}
-
-.card-back {
-    background-color: #FFFFFF;
-    padding: 10px;
-    font-size: 11px;
-    font-family: 'poppins-regular';
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    opacity: 0.95;
-    height: 100%;
-    display: none;
-}
-
-.card-back p {
-    margin-bottom: 8px;
-}
-
-.card-cover-img:hover .card-back {
-    display: block;
-}
-
-.card-cover-img:hover .imageText {
-    display: none;
 }
 
 .disclaimerRow {
@@ -423,6 +341,9 @@ body, html {
 .content-panel .text-content p{
     margin-left: 5px;
     margin-right: 5px;
+}
+.content-panel .text-content h2:first-child{
+    padding-top: 20px;
 }
 .content-panel .text-content h2 {
     font-family: 'poppins-semibold';
@@ -595,109 +516,7 @@ table.table-style2 .trbg {
     width: 100%;
     max-width: 1024px;
 }
-/*Annimation*/
-.annim1{
-    animation: floatText 2s normal;
-}
-.annim2{
-    animation: floatNav 2s normal;
-}
-.annim3{
-    animation: textSlideTop 2s normal;
-}
-.annim4{
-    /*animation: imageSlideTop 2s normal;*/
-}
-.annim4-1{
-    position: relative;
-    bottom: 0px;
-    animation: cardSlide 2s normal;
-    animation-delay: 0s;
-}
-.annim4-11{
-    position: relative;
-    bottom: 0px;
-    animation: imageSlideTop 2s normal;
-    animation-delay: 0s;
-}
-.annim4-111{
-    position: relative;
-    bottom: 0px;
-    animation: cardTextSlide 2s normal;
-    animation-delay: 0s;
-}
-.annim4-2{
-    position: relative;
-    bottom: 0px;
-    animation: cardSlide 2s normal;
-    animation-delay: 0.3s;
-}
-.annim4-22{
-    position: relative;
-    bottom: 0px;
-    animation: imageSlideTop 2s normal;
-    animation-delay: 0.3s;
-}
-.annim4-222{
-    position: relative;
-    bottom: 0px;
-    animation: cardTextSlide 2s normal;
-    animation-delay: 0.3s;
-}
-.annim4-3{
-    position: relative;
-    bottom: 0px;
-    animation: cardSlide 2s normal;
-    animation-delay: 0.4s;
-}
-.annim4-33{
-    position: relative;
-    bottom: 0px;
-    animation: imageSlideTop 2s normal;
-    animation-delay: 0.4s;
-}
-.annim4-333{
-    position: relative;
-    bottom: 0px;
-    animation: cardTextSlide 2s normal;
-    animation-delay: 0.4s;
-}
-.annim4-4{
-    position: relative;
-    bottom: 0px;
-    animation: cardSlide 2s normal;
-    animation-delay: 0.5s;
-}
-.annim4-44{
-    position: relative;
-    bottom: 0px;
-    animation: imageSlideTop 2s normal;
-    animation-delay: 0.5s;
-}
-.annim4-444{
-    position: relative;
-    bottom: 0px;
-    animation: cardTextSlide 2s normal;
-    animation-delay: 0.5s;
-}
-.annim4-5{
-    position: relative;
-    bottom: 0px;
-    animation: cardSlide 2s normal;
-    animation-delay: 0.6s;
-}
-.annim4-55{
-    position: relative;
-    bottom: 0px;
-    animation: imageSlideTop 2s normal;
-    animation-delay: 0.6s;
-}
-.annim4-555{
-    position: relative;
-    bottom: 0px;
-    animation: cardTextSlide 2s normal;
-    animation-delay: 0.6s;
-}
+
 .ht0{
     height: 0px;
 }
@@ -710,65 +529,61 @@ table.table-style2 .trbg {
     top: 177px;
     color: white;
 }
-@-webkit-keyframes floatText{
-    from {
-      margin-left: 200px;
-    }
-  
-    to {
-      /* left: auto; */
-      margin-left: 0px;
-    }
-  }
-  @-webkit-keyframes floatNav{
-    from {
-        margin-left: -200px;
-    }
-  
-    to {
-      /* left: auto; */
-      margin-left: 0px;
-    }
-  }
-  @-webkit-keyframes textSlideTop{
-    from {
-        margin-top: 206px;
-    }
-  
-    to {
-      /* left: auto; */
-      margin-top: 0px;
-    }
-  }
-  @-webkit-keyframes imageSlideTop{
-    from {
-        height: 0px;
-    }
-  
-    to {
-      /* left: auto; */
-      height: 206px;
-    }
-  }
-  @-webkit-keyframes cardSlide{
-    from {
-        margin-top: 206px;
-    }
-  
-    to {
-      /* left: auto; */
-      margin-top: 0px;
-    }
-  }
-  @-webkit-keyframes cardTextSlide{
-    from {
-        height:0px;
-    }
-  
-    to {
-      /* left: auto; */
-      height: 70px;
-    }
-  }
+.uppercase{
+    text-transform:uppercase;
+}
+.container-fs.slide-aboutthebook{
+    background-color: #000000;
+}
+.rikshaw-girl-bg{
+    background: url(../images/img-1.png);
+    background-repeat: no-repeat;
+    background-position-x: -205px;
+    background-position-y: -140px;
+    min-height: 650px;
+    background-color: #919E57;
+}
+.award-circle-wrap{
+    padding-left: 30px;
+    padding-top: 55px;
+    margin-top: 30px;
+}
+.award-circle{
+    height: 180px;
+    width: 180px;
+    background-color: #EBC979;
+    border-radius: 50%;
+}
+.award-circle .award-text{
+    padding: 34px 15px;
+    font-family: 'poppins-semibold';
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+.side-image-bar{
+    position: fixed;
+    top: 95px;
+    left: 0;
+    overflow: hidden;
+}
+.rikshaw-girl-text{
+    padding-top: 90px;
+    padding-left: 105px;
+}
+h1.main-heading{
+    font-family: 'poppins-semibold';
+    font-size: 190px;
+    text-shadow: 15px 0px 47px rgb(0 0 0);
+    color: #FFFFFF;
+    letter-spacing: -10px;
+    line-height: 170px;
+}
+.author-container{
 
-/**/
+}
+.author-container .text{
+    font-size: 22px;
+    font-family: 'poppins-regular';
+    color:#FFFFFF;
+}
