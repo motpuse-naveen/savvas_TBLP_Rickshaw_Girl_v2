@@ -587,3 +587,12 @@ h1.main-heading{
     font-family: 'poppins-regular';
     color:#FFFFFF;
 }
+
+.fiercelyDiv{ 
+    background-color: #D5D5D5;
+    border: 1px solid #707070;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+    line-height: 45px;
+  }
