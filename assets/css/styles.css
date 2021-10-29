@@ -810,6 +810,7 @@ background-color: #000000;
     font-size: 16px;
     overflow: auto;
     height: 100%;
+    padding-right: 100px;
 }
 .projectTemplateContent{
     font-family: 'poppins-light';
@@ -839,6 +840,14 @@ background-color: #000000;
     line-height: 66px;
     margin-top: 200px;
     margin-left: -70px;
+}
+.activityLeft-title1{
+    font-family: 'poppins-semibold';
+    color: #597CBE91;
+    font-size: 66px;
+    line-height: 66px;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
 }
 /*Annimation*/
 
