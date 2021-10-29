@@ -89,13 +89,14 @@ $(document).on('click', '.activitySupport', function (event) {
     }
 });
 
-$(document).on('click', '#disclaimerClose', function (event) {
+$(document).on('click', '.ac-popup-close-btn', function (event) {
     if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
         event.preventDefault();
         $(".container-fs").ShowElement();
-        $('.container-fs-popup.disclaimer').HideElement();
-        setTabIndex();
+        $(this).closest(".container-fs-popup").HideElement();
         lastFocusedElement.focus();
     }
 });
+
+
 
