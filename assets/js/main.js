@@ -51,9 +51,14 @@ $(document).on("click", '.link-tab', function(event){
     }
 });
 
-$(document).on("click", ".side-nav-circle ul li a", function(event){
-    $(".side-nav-circle ul li a").removeClass("active");
+$(document).on("click", ".left-side-bar .side-nav ul li a", function(event){
+    debugger;
+    $(".side-nav ul li a").removeClass("active");
     $(this).addClass("active");
+    var panelId = $(this).attr("panelid");
+    var panelregion = $(this).attr("panelregion");
+    $("." + panelregion + ".content-panel").removeClass("active").addClass("inactive");
+    $("." + panelregion + ".content-panel." + panelId).removeClass("inactive").addClass("active");
 })
 
 $(document).on("click", ".card-body .card-link", function(event){
