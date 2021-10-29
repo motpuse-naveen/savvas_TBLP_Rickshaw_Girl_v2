@@ -811,6 +811,13 @@ background-color: #000000;
     overflow: auto;
     height: 100%;
 }
+.projectTemplateContent{
+    font-family: 'poppins-light';
+    font-size: 16px;
+    overflow: auto;
+    left: 50px;    
+    height: 100%;
+}
 .activitySupportHeading {
     font-family: 'poppins-semibold';
     margin-bottom: 1rem;
