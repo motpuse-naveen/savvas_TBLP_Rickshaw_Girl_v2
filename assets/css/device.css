@@ -1,29 +1,115 @@
+@media (max-width:1024) {
+    .rikshaw-girl-bg {
+        overflow: hidden;
+    }
+}
 
-@media (max-width: 990px) {
-    .left-side-bar{
-        display: none;
+@media (max-width: 990px){
+    .rikshaw-girl-text {
+        position: relative;
+        padding-left: 0px;
+        max-width: 740px;
+        margin: 0 auto;
     }
-    .content-panel{
-        margin: auto;
-    }
-    .card-wrap .card{
+    h1.main-heading {
+        font-family: 'poppins-semibold';
+        font-size: 160px;
+        text-shadow: 15px 0px 47px rgb(0 0 0);
+        color: #FFFFFF;
+        letter-spacing: -5px;
+        line-height: 170px;
         margin-right: auto;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+    /*.content-panel{
+        margin: auto;
+    }
     .left-side-bar{
+        display: none;
+    }*/
+    .author-container {
+        position: inherit;
+    }
+    .author-container .author-wrap {
+        float: left;
+        padding: 20px;
+        padding-top: 145px;
+    }
+    .rikshaw-girl-bg {
+        background: url(../images/Hero_RickShawGirl.png);
+        background-size: 680px;
+        background-repeat: no-repeat;
+        background-position-x: -165px;
+        background-position-y: -140px;
+        min-height: 700px;
+        background-color: #000000;
+        position: relative;
+    }
+    .rikshaw-girl-text {
+        position: relative;
+        padding-top: 60px;
+        padding-left: 0px;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    h1.main-heading {
+        font-family: 'poppins-semibold';
+        font-size: 160px;
+        text-shadow: 15px 0px 47px rgb(0 0 0);
+        color: #FFFFFF;
+        letter-spacing: -5px;
+        line-height: 170px;
+        margin-right: auto;
+    }
+    .moreInfo-wrapper {
+        float: right;
+        width: 370px;
+        margin-top: 0px;
+    }
+    .moreInfo-container {
+        margin-top: 100px;
+    }
+    .award-circle-wrap {
+        padding-left: 100px;
+        padding-top: 160px
+    }
+    .author-wrap span.image {
+        float: left;
+        margin-top: -24px;
+    }
+    .author-wrap span.text {
+        margin: 15px;
+        padding-top: 20px;
+    }
+    .orbitdiv {
+        position: absolute;
+        top: 215px;
+        right: -47px;
+        width: 234px;
+        height: 234px;
+    }
+}
+/*
+@media (max-width: 768px) {
+    .content-panel {
+        margin: auto;
+    }
+    .left-side-bar {
         display: none;
     }
 }
+*/
+
 @media (max-width: 730px) {
-    .card-body a.card-text{
+    .card-body a.card-text {
         font-size: 12px;
     }
-    .card-body p.card-text{
+    .card-body p.card-text {
         font-size: 11px;
     }
-    .card-back{
+    .card-back {
         font-size: 9px;
     }
 }
