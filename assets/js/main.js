@@ -79,3 +79,23 @@ $(document).on("click", "#fullmoonClose", function(event){
     $('.container-fs-popup.fullmoon').HideElement();
 })
 
+
+$(document).on('click', '.activitySupport', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        var popupref = $(this).attr("popupref")
+        $(".container-fs").HideElement();
+        $('.container-fs-popup.' + popupref).ShowElement();
+    }
+});
+
+$(document).on('click', '#disclaimerClose', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        $(".container-fs").ShowElement();
+        $('.container-fs-popup.disclaimer').HideElement();
+        setTabIndex();
+        lastFocusedElement.focus();
+    }
+});
+

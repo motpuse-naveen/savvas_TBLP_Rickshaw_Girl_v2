@@ -801,8 +801,10 @@ background-color: #000000;
 }
 .slide-beforereading .content-panel.active { display: block;}
 .slide-beforereading .content-panel.inactive { display: none;}
-
-
+.slide-duringreading .content-panel.active { display: block;}
+.slide-duringreading .content-panel.inactive { display: none;}
+.slide-afterreading .content-panel.active { display: block;}
+.slide-afterreading .content-panel.inactive { display: none;}
 /*Annimation*/
 
 .annim1 {
