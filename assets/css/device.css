@@ -1,4 +1,4 @@
-@media (max-width:1024) {
+@media (max-width:1024px) {
     .rikshaw-girl-bg {
         overflow: hidden;
     }
@@ -38,7 +38,7 @@
         padding-top: 145px;
     }
     .rikshaw-girl-bg {
-        background: url(../images/Hero_RickShawGirl.png);
+        background: url(../images/Hero_RickShawGirl_8bit.png);
         background-size: 680px;
         background-repeat: no-repeat;
         background-position-x: -165px;

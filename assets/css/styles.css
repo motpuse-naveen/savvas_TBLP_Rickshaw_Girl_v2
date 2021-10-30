@@ -314,18 +314,24 @@ body, html {
     margin: 0 5px;
 }
 
-.disclaimerRow {
+.disclaimerRow, .aboutauthor-row {
     height: 100%;
 }
 
-.disclaimerConcave {
+.disclaimerConcave, .aboutauthorConcave {
     height: 100%;
 }
-
 .disclaimerConcave .concave {
     height: 100%;
     margin-top: -3px;
     max-width: 100%;
+}
+.aboutauthorConcave .concave{
+    height: 100%;
+    max-width: 100%;
+    margin-top: 38px;
+    position: relative;
+    z-index: 99;
 }
 
 .popup-close-btn, .ac-popup-close-btn {
@@ -581,7 +587,7 @@ table.table-style2 .trbg {
 }
 
 .rikshaw-girl-bg {
-    background: url(../images/Hero_RickShawGirl.png);
+    background: url(../images/Hero_RickShawGirl_8bit.png);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position-x: -165px;
@@ -712,6 +718,7 @@ h1.main-heading {
     color: #FF0000;
     float: right;
     margin: -4px;
+    cursor: pointer;
 }
 
 .orbitdiv {
@@ -849,6 +856,50 @@ background-color: #000000;
     margin-bottom: 1rem;
     margin-top: 4rem;
 }
+.about-author-slider{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+.aa-slider-container{
+    margin-left: 10%;
+    width: 90%;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.imgbookcover{
+    width: 100%;
+    
+}
+.content2{
+    height: 100%;
+    overflow: auto;
+}
+
+.aboutBook{
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 10rem;
+}
+.aboutBook p{margin: 0px;}
+
+.aboutBookContent{
+    padding-top: 6rem;
+    overflow: auto;
+    height: 100%;
+    padding-right: 3rem;
+}
+.aboutauthorHeader{
+    font-family: 'poppins-semibold';
+    font-size: 45px;
+}
+.container-fs-popup.aboutauthor{
+    height: 96%;
+}
+
 /*Annimation*/
 
 .annim1 {
@@ -869,6 +920,9 @@ background-color: #000000;
 }
 .annim6{
     animation: orbit3anim 1s normal;
+}
+.annim10{
+    animation: slidecover 2s normal;
 }
 
 @-webkit-keyframes floatmenu {
@@ -931,4 +985,14 @@ background-color: #000000;
         opacity: 1;
     }
   }
+  @-webkit-keyframes slidecover{
+    from {
+        margin-left: 100px;
+    }
+  
+    to {
+        margin-left: 0px;
+    }
+  }
+
 

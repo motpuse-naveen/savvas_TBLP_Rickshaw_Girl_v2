@@ -98,5 +98,23 @@ $(document).on('click', '.ac-popup-close-btn', function (event) {
     }
 });
 
+$(document).on('click', '.moreInfo', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        var popupref = $(this).attr("popupref")
+        $(".container-fs").HideElement();
+        $('.container-fs-popup.aboutauthor').ShowElement();
+    }
+});
+
+$(document).on('click', '#aboutauthorClose', function (event) {
+    if (event.type === 'click' || (event.type === 'keydown') && (event.keyCode === 13 || event.keyCode === 32)) {
+        event.preventDefault();
+        $(".container-fs").ShowElement();
+        $('.container-fs-popup.aboutauthor').HideElement();
+    }
+});
+
+
 
 
