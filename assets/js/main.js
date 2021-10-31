@@ -53,10 +53,11 @@ $(document).on("click", '.link-tab', function(event){
 
 $(document).on("click", ".left-side-bar .side-nav ul li a", function(event){
     debugger;
-    $(".side-nav ul li a").removeClass("active");
-    $(this).addClass("active");
-    var panelId = $(this).attr("panelid");
     var panelregion = $(this).attr("panelregion");
+    var panelId = $(this).attr("panelid");
+    $(".side-nav." + panelregion + " ul li a").removeClass("active");
+    $(this).addClass("active");
+    
     $("." + panelregion + ".content-panel").removeClass("active").addClass("inactive");
     $("." + panelregion + ".content-panel." + panelId).removeClass("inactive").addClass("active");
 })
