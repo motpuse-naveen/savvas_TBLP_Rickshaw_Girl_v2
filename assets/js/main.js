@@ -116,6 +116,12 @@ $(document).on('click', '#aboutauthorClose', function (event) {
     }
 });
 
+$(document).on('keypress', '#aboutauthorClose', function (event) {
+    if(event.which == 13) {
+        $(this).click();
+    }
+});
+
 
 
 
