@@ -26,11 +26,11 @@ $.fn.extend({
     },
     ActiveTabs: function () {
         return this.each(function () {
-            $(this).addClass("active").removeClass("inactive").removeAttr("aria-hidden");
+            $(this).addClass("active").removeClass("inactive").attr("aria-hidden", "false");
         });
     }
 });
-
+/*
 (function(document, history, location) {
     var HISTORY_SUPPORT = !!(history && history.pushState);
   
@@ -38,29 +38,18 @@ $.fn.extend({
       ANCHOR_REGEX: /^#[^ ]+$/,
       OFFSET_HEIGHT_PX: 95,
   
-      /**
-       * Establish events, and fix initial scroll position if a hash is provided.
-       */
+      
       init: function() {
-        //this.scrollToCurrent();
+        
         $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
         $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
       },
   
-      /**
-       * Return the offset amount to deduct from the normal scroll position.
-       * Modify as appropriate to allow for dynamic calculations
-       */
       getFixedOffset: function() {
         return this.OFFSET_HEIGHT_PX;
       },
   
-      /**
-       * If the provided href is an anchor which resolves to an element on the
-       * page, scroll to it.
-       * @param  {String} href
-       * @return {Boolean} - Was the href an anchor.
-       */
+      
       scrollIfAnchor: function(href, pushToHistory) {
         var match, anchorOffset;
   
@@ -75,7 +64,7 @@ $.fn.extend({
           $('html, body').animate({ scrollTop: anchorOffset});
           $("a[refid]").removeClass("active");
           $("a[refid='" + href.slice(1) + "']").addClass("active");
-          // Add the state to history as-per normal anchor links
+          
           if(HISTORY_SUPPORT && pushToHistory) {
             history.pushState({}, document.title, location.pathname + href);
           }
@@ -84,18 +73,12 @@ $.fn.extend({
         return !!match;
       },
       
-      /**
-       * Attempt to scroll to the current location's hash.
-       */
       scrollToCurrent: function(e) { 
         if(this.scrollIfAnchor(window.location.hash) && e) {
             e.preventDefault();
         }
       },
   
-      /**
-       * If the click event's target was an anchor, fix the scroll position.
-       */
       delegateAnchors: function(e) {
         var elem = e.target;
   
@@ -107,4 +90,4 @@ $.fn.extend({
   
       $(document).ready($.proxy(anchorScrolls, 'init'));
   })(window.document, window.history, window.location);
-  
+  */

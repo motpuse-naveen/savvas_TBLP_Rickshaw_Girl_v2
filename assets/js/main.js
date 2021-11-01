@@ -44,8 +44,8 @@ $(document).on("click", '.link-tab', function(event){
     //debugger;
     if(!$(this).hasClass("active")){
         var dataid = $(this).attr("data-tabid");
-        $(".link-tab.active").removeClass("active")
-        $(this).addClass("active")
+        $(".link-tab.active").removeClass("active").attr("aria-selected","false")
+        $(this).addClass("active").attr("aria-selected","true")
         $(".container-fs.slide").InactiveTabs();
         $("#" + dataid).ActiveTabs();
     }
@@ -55,11 +55,11 @@ $(document).on("click", ".left-side-bar .side-nav ul li a", function(event){
     debugger;
     var panelregion = $(this).attr("panelregion");
     var panelId = $(this).attr("panelid");
-    $(".side-nav." + panelregion + " ul li a").removeClass("active");
-    $(this).addClass("active");
+    $(".side-nav." + panelregion + " ul li a").removeClass("active").attr("aria-current","false").removeAttr("aria-describedby");;
+    $(this).addClass("active").attr("aria-current","true").attr("aria-describedby","selectedMenuText");;
     
-    $("." + panelregion + ".content-panel").removeClass("active").addClass("inactive");
-    $("." + panelregion + ".content-panel." + panelId).removeClass("inactive").addClass("active");
+    $("." + panelregion + ".content-panel").removeClass("active").addClass("inactive").attr("aria-hidden","true");
+    $("." + panelregion + ".content-panel." + panelId).removeClass("inactive").addClass("active").attr("aria-hidden","false");;
 })
 
 $(document).on("click", ".card-body .card-link", function(event){
