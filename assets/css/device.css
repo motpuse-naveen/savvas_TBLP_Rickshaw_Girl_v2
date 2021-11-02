@@ -1,3 +1,8 @@
+@media (max-width:1240px) {
+    .activityLeft-title{
+        font-size: 44px;
+    }
+}
 @media (max-width:1024px) {
     .rikshaw-girl-bg {
         overflow: hidden;
@@ -19,6 +24,13 @@
         letter-spacing: -5px;
         line-height: 170px;
         margin-right: auto;
+    }
+    .activitySupportContent .col-md-12 .activityLeft-title{
+        margin-top: 0;
+        text-align: left;
+    }
+    img.aboutBookCover{
+        margin-left: 0px;
     }
 }
 
@@ -91,16 +103,17 @@
         height: 234px;
     }
 }
-/*
+
 @media (max-width: 768px) {
-    .content-panel {
-        margin: auto;
+    .aboutauthorConcave{
+        flex: 0%;
     }
-    .left-side-bar {
-        display: none;
+    .bgconcave{
+        flex: 100%;
+        max-width: 95%;
     }
 }
-*/
+
 
 @media (max-width: 730px) {
     .card-body a.card-text {

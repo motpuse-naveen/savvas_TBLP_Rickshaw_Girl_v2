@@ -327,7 +327,7 @@ body, html {
     max-width: 100%;
 }
 .aboutauthorConcave .concave{
-    height: 100%;
+    /*height: 100%;*/
     max-width: 100%;
     margin-top: 38px;
     position: relative;
@@ -819,6 +819,7 @@ background-color: #000000;
     overflow: auto;
     height: 100%;
     padding-right: 100px;
+    margin-top: 4rem;
 }
 .projectTemplateContent{
     font-family: 'poppins-light';
@@ -830,7 +831,6 @@ background-color: #000000;
 .activitySupportHeading {
     font-family: 'poppins-semibold';
     margin-bottom: 1rem;
-    margin-top: 4rem;
 }
 
 .actbtnFixed{
@@ -846,16 +846,8 @@ background-color: #000000;
     color: #597CBE91;
     font-size: 66px;
     line-height: 66px;
-    margin-top: 200px;
-    margin-left: -70px;
-}
-.activityLeft-title1{
-    font-family: 'poppins-semibold';
-    color: #597CBE91;
-    font-size: 66px;
-    line-height: 66px;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
+    text-align: center;
 }
 .about-author-slider{
     position: absolute;
@@ -883,22 +875,48 @@ background-color: #000000;
 .aboutBook{
     font-size: 15px;
     font-style: italic;
-    padding-top: 10rem;
+    padding-top: 3rem;
+    border: 20px solid #FFFFFF;
+    border-top: 0;
 }
 .aboutBook p{margin: 0px;}
 
 .aboutBookContent{
-    padding-top: 6rem;
+    /*padding-top: 6rem;*/
     overflow: auto;
     height: 100%;
     padding-right: 3rem;
+}
+.aboutauthor-row2{
+    margin-top: 4rem;
 }
 .aboutauthorHeader{
     font-family: 'poppins-semibold';
     font-size: 45px;
 }
-.container-fs-popup.aboutauthor{
-    height: 96%;
+img.aboutBookCover{
+    width: 250px;
+    border: 20px solid #FFFFFF;
+    border-radius: 20px;
+    margin-left: -175px;
+    float: left;
+}
+.aboutauthor-row{
+    height: 100%;
+    background: url(../images/Hero_RickShawGirl_8bit.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-position: -216px -121px;
+}
+.bgconcave{
+    background-color: #FFFFFF;
+    border-top-left-radius: 6% 16%;
+    border-bottom-left-radius: 6% 54%;
+    box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
+    -moz-box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
+    padding-right: 30px;
 }
 .table-dr-1{
 
@@ -970,6 +988,14 @@ background-color: #000000;
 }
 .tableProjTemp th{
     border-bottom: 1px solid #000000 !important;
+}
+.tableWrapper{
+    padding: 30px;
+    border: 1px solid #000000;
+}
+.leftalig-nmt0{
+    margin-top: 0;
+    text-align: left;
 }
 /*Annimation*/
 

@@ -70,7 +70,7 @@ $(document).on("click", ".card-body .card-link", function (event) {
 	event.stopPropagation();
 })
 
-$(document).on('click', '.activitySupport', function (event) {
+$(document).on('click', 'button.activitySupport', function (event) {
     event.preventDefault();
     debugger
     var popupref = $(this).attr("popupref")
