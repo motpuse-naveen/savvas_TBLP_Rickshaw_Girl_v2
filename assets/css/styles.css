@@ -389,18 +389,18 @@ body, html {
     margin-bottom: 10px;
 }
 
-.content-panel .text-content h3.blue-heading {
+.content-panel .text-content h3.blue-heading, .content-panel .text-content p.blue-heading {
     font-family: 'poppins-semibold';
     font-size: 20px;
     color: #0072EE;
     line-height: 28px;
 }
 
-h3.blue-heading a {
+h3.blue-heading a, p.blue-heading a  {
     text-decoration: underline;
 }
 
-h3.blue-heading .playicon {
+h3.blue-heading .playicon, p.blue-heading .playicon {
     margin-right: 10px;
 }
 
