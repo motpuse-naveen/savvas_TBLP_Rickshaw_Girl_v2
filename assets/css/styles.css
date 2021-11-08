@@ -781,7 +781,7 @@ h1.main-heading {
 }
 .intensetable td {
     vertical-align:middle;
-    text-align: center;
+    text-align: right;
 }
 .arrowImg{
     height: 193px;
@@ -918,6 +918,30 @@ img.aboutBookCover{
     -moz-box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
     padding-right: 30px;
 }
+.solidl{
+    letter-spacing: -3px;
+}
+.delicately{
+    background-color: #fff2cc;
+    border: 1px solid black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.gently{
+    background-color: #ffe599;
+  border: 1px solid black;
+}
+.firmly{
+    background-color: #ffd966;
+    border: 1px solid black;
+}
+.fiercely{
+  background-color: #bf9000;
+  border: 1px solid black;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
 .table-dr-1{
 
 }
