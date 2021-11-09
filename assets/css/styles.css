@@ -1,6 +1,12 @@
+html, body {
+    min-height: 100%;
+  }
 body {
     margin: 0;
     font-family: "poppins-light";
+}
+body.black{
+    background-color: #000000;
 }
 
 ol, ul, dl {
@@ -268,8 +274,9 @@ body, html {
     line-height: 15px;
     margin-left: 30px;
     margin-right: 11px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    width: 165px;
 }
 
 .bold {
