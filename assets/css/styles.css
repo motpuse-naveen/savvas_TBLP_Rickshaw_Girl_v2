@@ -37,7 +37,7 @@ body, html {
 .container-fs {}
 
 .container-fs.slide {
-    margin-top: 95px;
+    margin-top: 56px;
 }
 
 .fixed-head-bar {
@@ -174,7 +174,7 @@ body, html {
     height: 80%;
     width: 205px;
     position: fixed;
-    top: 95px;
+    top: 56px;
     left: 0;
     overflow: hidden;
 }
@@ -345,7 +345,7 @@ body, html {
     position: absolute;
     font-size: 32px;
     right: 15px;
-    top: 55px;
+    top: 15px;
     cursor: pointer;
 }
 
@@ -627,7 +627,7 @@ table.table-style2 .trbg {
 
 .side-image-bar {
     position: fixed;
-    top: 95px;
+    top: 56px;
     left: 0;
     overflow: hidden;
 }
@@ -1030,49 +1030,49 @@ img.aboutBookCover{
 }
 /*Annimation*/
 
-.annim1 {
+.annim-text-slide {
     animation: textSlideTop 2s normal;
 }
-.annim2 {
+.annim-bg-image {
     animation: bgImageSlide 2s normal;
 }
-.annim3{
+.annimmenu{
     background-color: #FFFFFF;
     animation: floatmenu 2s normal;
 }
-.annim4{
+.annim-orbit1{
     animation: orbit1anim 3s normal;
 }
-.annim5{
+.annim-orbit2{
     animation: orbit2anim 2s normal;
 }
-.annim6{
+.annim-orbit3{
     animation: orbit3anim 1s normal;
 }
-.annim10{
-    animation: slidecover 2s normal;
+.annim-fade{
+    animation: fadeannim 2s normal;
 }
 
 @-webkit-keyframes floatmenu {
     from {
-        margin-top: -50px;
+        margin-top: -56px;
+        opacity: 0.5;
     }
     to {
         /* left: auto; */
         margin-top: 0px;
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes textSlideTop{
     from {
         margin-top: 100px;
-        opacity: 0.5;
     }
   
     to {
       /* left: auto; */
       margin-top: 0px;
-      opacity: 1;
     }
   }
 
@@ -1113,14 +1113,13 @@ img.aboutBookCover{
         opacity: 1;
     }
   }
-  @-webkit-keyframes slidecover{
+  @-webkit-keyframes fadeannim{
     from {
-        margin-left: 100px;
+        opacity: 0;
     }
   
     to {
-        margin-left: 0px;
+        opacity: 1;
     }
   }
-
 

@@ -13,12 +13,13 @@ $(document).ready(function () {
     });
 
     setTimeout(function () {
-        $(".annim1").removeClass("annim1")
-        $(".annim2").removeClass("annim2")
-        $(".annim3").removeClass("annim3")
-        $(".annim4").removeClass("annim4")
-        $(".annim4").removeClass("annim5")
-        $(".annim4").removeClass("annim6")
+        $(".annim-text-slide").removeClass("annim-text-slide")
+        $(".annim-bg-image").removeClass("annim-bg-image")
+        $(".annimmenu").removeClass("annimmenu")
+        $(".annim-orbit1").removeClass("annim-orbit1")
+        $(".annim-orbit2").removeClass("annim-orbit2")
+        $(".annim-orbit3").removeClass("annim-orbit3")
+        $(".annim-fade").removeClass("annim-fade")
     }, 3000)
 
 });
@@ -43,6 +44,12 @@ $(document).on("click", '.link-tab', function (event) {
     //debugger;
     if (!$(this).hasClass("active")) {
         var dataid = $(this).attr("data-tabid");
+        if(dataid == "slide-aboutthebook"){
+            $("body").addClass("black");
+        }
+        else{
+            $("body").removeClass("black");
+        }
         $(".link-tab.active").removeClass("active").attr("aria-selected", "false")
         $(this).addClass("active").attr("aria-selected", "true")
         $("#" + dataid).ActiveTabs();
