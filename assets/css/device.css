@@ -1,5 +1,5 @@
 @media (max-width:1240px) {
-    .activityLeft-title{
+    .popup-left-title{
         font-size: 44px;
     }
 }
@@ -25,7 +25,7 @@
         line-height: 170px;
         margin-right: auto;
     }
-    .activitySupportContent .col-md-12 .activityLeft-title{
+    .popup-content-col .col-md-12 .popup-left-title{
         margin-top: 0;
         text-align: left;
     }

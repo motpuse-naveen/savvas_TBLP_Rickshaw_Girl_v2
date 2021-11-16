@@ -79,7 +79,7 @@ $(document).on("click", ".card-body .card-link", function (event) {
 
 $(document).on('click', 'button.activitySupport', function (event) {
     event.preventDefault();
-    debugger
+    //debugger
     var popupref = $(this).attr("popupref")
     $('.container-fs-popup.' + popupref).ShowElement();
     var ashlength = $('.container-fs-popup.' + popupref).find(".activitySupportHeading").length;
@@ -87,11 +87,11 @@ $(document).on('click', 'button.activitySupport', function (event) {
         $('.container-fs-popup.' + popupref).find(".activitySupportHeading").focus();
     }
     else{
-        if($('.container-fs-popup.' + popupref).find(".activityLeft-title").length>0){
-            $('.container-fs-popup.' + popupref).find(".activityLeft-title").focus();
+        if($('.container-fs-popup.' + popupref).find(".popup-left-title").length>0){
+            $('.container-fs-popup.' + popupref).find(".popup-left-title").focus();
         }
         else{
-            $('.container-fs-popup.' + popupref).find(".activityLeft-title1").focus();
+            //$('.container-fs-popup.' + popupref).find(".activityLeft-title1").focus();
         }
     }
     $(".container-fs").HideElement();
