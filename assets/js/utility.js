@@ -36,7 +36,7 @@ $.fn.extend({
 
   var anchorScrolls = {
     ANCHOR_REGEX: /^#[^ ]+$/,
-    OFFSET_HEIGHT_PX: 95,
+    OFFSET_HEIGHT_PX: 56,
 
 
     init: function () {
