@@ -853,7 +853,6 @@ background-color: #000000;
 .aboutBook{
     font-size: 15px;
     font-style: italic;
-    padding-top: 3rem;
     border: 20px solid #FFFFFF;
     border-top: 0;
 }
@@ -876,8 +875,7 @@ img.aboutBookCover{
     width: 250px;
     border: 20px solid #FFFFFF;
     border-radius: 20px;
-    margin-left: -175px;
-    float: left;
+    border-top: 0px;
 }
 .aboutauthor-row{
     height: 100%;
