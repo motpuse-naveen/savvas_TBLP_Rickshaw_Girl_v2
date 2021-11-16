@@ -324,7 +324,7 @@ body, html {
 .popup-close-btn, .ac-popup-close-btn {
     position: absolute;
     font-size: 32px;
-    right: 15px;
+    right: 30px;
     top: 15px;
     cursor: pointer;
 }
@@ -925,7 +925,7 @@ img.aboutBookCover{
     font-size: 16px;
     overflow: auto;
     height: 100%;
-    padding-right: 3rem;
+    padding-right: 5rem;
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
