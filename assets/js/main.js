@@ -27,7 +27,7 @@ $(document).ready(function () {
 $(document).on('click', '.link-learmore', function (event) {
     event.preventDefault();
     $('.container-fs-popup.disclaimer').ShowElement();
-    $(".disclaimerHeader").focus();
+    $(".popup-content-title").focus();
     $(".container-fs").HideElement();
     lastFocusedElement = $(this);
 });

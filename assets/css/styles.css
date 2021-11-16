@@ -321,26 +321,6 @@ body, html {
     margin: 0 5px;
 }
 
-.disclaimerRow, .aboutauthor-row {
-    height: 100%;
-}
-
-.disclaimerConcave, .aboutauthorConcave {
-    height: 100%;
-}
-.disclaimerConcave .concave {
-    height: 100%;
-    margin-top: -3px;
-    max-width: 100%;
-}
-.aboutauthorConcave .concave{
-    /*height: 100%;*/
-    max-width: 100%;
-    margin-top: 38px;
-    position: relative;
-    z-index: 99;
-}
-
 .popup-close-btn, .ac-popup-close-btn {
     position: absolute;
     font-size: 32px;
@@ -354,18 +334,6 @@ body, html {
     top: 0;
     left: 0;
 }
-
-.disclaimerContent {
-    margin-top: 8rem;
-    font-family: 'poppins-light';
-    font-size: 16px;
-}
-
-.disclaimerHeader {
-    font-family: 'poppins-semibold';
-    margin-bottom: 2rem;
-}
-
 .content-panel .text-content {
     font-family: 'poppins-light';
     font-size: 16px;
@@ -678,15 +646,6 @@ h1.main-heading {
     width: 370px;
     margin-top: -136px;
 }
-/*
-.moreInfo-rightpan .moreInfo {
-    margin-top: -180px;
-    text-align: right;
-    padding: 0 28px;
-    padding-bottom: 20px;
-}
-*/
-
 .moreInfo {
     position: absolute;
     top: 107px;
@@ -827,29 +786,6 @@ background-color: #000000;
     left: 30px;
     top: 350px;
 }
-.about-author-slider{
-    position: absolute;
-    top:0px;
-    right: 0px;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-}
-.aa-slider-container{
-    margin-left: 10%;
-    width: 90%;
-    background-color: #FFFFFF;
-    padding-top: 30px;
-}
-.imgbookcover{
-    width: 100%;
-    
-}
-.content2{
-    height: 100%;
-    overflow: auto;
-}
-
 .aboutBook{
     font-size: 15px;
     font-style: italic;
@@ -864,9 +800,6 @@ background-color: #000000;
     height: 100%;
     padding-right: 3rem;
 }
-.aboutauthor-row2{
-    margin-top: 4rem;
-}
 .aboutauthorHeader{
     font-family: 'poppins-semibold';
     font-size: 45px;
@@ -876,23 +809,6 @@ img.aboutBookCover{
     border: 20px solid #FFFFFF;
     border-radius: 20px;
     border-top: 0px;
-}
-.aboutauthor-row{
-    height: 100%;
-    background: url(../images/Hero_RickShawGirl_8bit.png);
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    overflow: auto;
-    background-position: -216px -121px;
-}
-.bgconcave{
-    background-color: #FFFFFF;
-    border-top-left-radius: 6% 16%;
-    border-bottom-left-radius: 6% 54%;
-    box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
-    -moz-box-shadow: -400px 4px 49px 71px rgba(0,0,0,0.59);
-    padding-right: 30px;
 }
 .solidl{
     letter-spacing: -3px;
