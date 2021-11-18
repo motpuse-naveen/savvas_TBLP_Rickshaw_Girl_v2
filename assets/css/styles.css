@@ -34,6 +34,7 @@ body, html {
     pointer-events: none;
 }
 
+
 .container-fs {}
 
 .container-fs.slide {
@@ -52,7 +53,7 @@ body, html {
     box-shadow: 0px 6px 9px 0px rgba(102, 102, 102, 0.6);
     -webkit-box-shadow: 0px 6px 9px 0px rgba(102, 102, 102, 0.6);
     -moz-box-shadow: 0px 6px 9px 0px rgba(102, 102, 102, 0.6);
-    z-index: 99;
+    z-index: 90;
 }
 
 .fixed-bar {
@@ -75,7 +76,7 @@ body, html {
 
 .topMenuBar1 {
     width: 100%;
-    z-index: 999;
+    z-index: 90;
     background-color: black;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -139,9 +140,9 @@ body, html {
 
 .topMenuBar2 .menu li a:hover, .topMenuBar2 .menu li a.active {
     color: #0072EE;
-    box-shadow: 0px 6px 0px 0px rgba(0, 114, 238, 1);
-    -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 114, 238, 1);
-    -moz-box-shadow: 0px 6px 0px 0px rgba(0, 114, 238, 1);
+    box-shadow: 0px 7px 0px -1px rgba(0, 114, 238, 1);
+    -webkit-box-shadow: 0px 7px 0px -1px rgba(0, 114, 238, 1);
+    -moz-box-shadow: 0px 7px 0px -1px rgba(0, 114, 238, 1);
 }
 
 .banner-bg {
@@ -171,7 +172,6 @@ body, html {
 }
 
 .left-side-bar {
-    height: 80%;
     width: 205px;
     position: fixed;
     top: 56px;
@@ -324,7 +324,7 @@ body, html {
 .popup-close-btn, .ac-popup-close-btn {
     position: absolute;
     font-size: 32px;
-    right: 30px;
+    right: 20px;
     top: 15px;
     cursor: pointer;
 }
@@ -355,12 +355,12 @@ body, html {
     border-bottom: 1px solid #000000;
     margin: 20px 5px;
     margin-bottom: 10px;
-    line-height: 60px;
+    padding-bottom: 10px;
 }
 .content-panel .text-content h3 {
     font-family: 'poppins-semibold';
     font-size: 24px;
-    margin: 25px 5px;
+    margin: 20px 5px;
     margin-bottom: 10px;
 }
 
@@ -650,7 +650,7 @@ h1.main-heading {
     position: absolute;
     top: 107px;
     left: 15px;
-    z-index: 99;
+    z-index: 91;
 }
 
 .moreInfo .linkmoreinfo {
@@ -789,8 +789,6 @@ background-color: #000000;
 .aboutBook{
     font-size: 15px;
     font-style: italic;
-    border: 20px solid #FFFFFF;
-    border-top: 0;
 }
 .aboutBook p{margin: 0px;}
 
@@ -798,17 +796,21 @@ background-color: #000000;
     /*padding-top: 6rem;*/
     overflow: auto;
     height: 100%;
-    padding-right: 3rem;
+    /*padding-right: 3rem;*/
 }
 .aboutauthorHeader{
     font-family: 'poppins-semibold';
     font-size: 45px;
+}
+.aboutBookCover-wrap{
+    
 }
 img.aboutBookCover{
     width: 250px;
     border: 20px solid #FFFFFF;
     border-radius: 20px;
     border-top: 0px;
+    margin-left: -20px;
 }
 .solidl{
     letter-spacing: -3px;
@@ -925,8 +927,8 @@ img.aboutBookCover{
     font-size: 16px;
     overflow: auto;
     height: 100%;
-    padding-right: 5rem;
-    padding-top: 3rem;
+    /*padding-right: 5rem;*/
+    padding-top: 4rem;
     padding-bottom: 1rem;
 }
 .popup-content-col .row{
@@ -937,7 +939,6 @@ img.aboutBookCover{
     font-family: 'poppins-semibold';
     color: #597CBE91;
     font-size: 66px;
-    line-height: 66px;
     margin-top: 6rem;
     text-align: center;
 }
@@ -945,10 +946,119 @@ img.aboutBookCover{
     font-family: 'poppins-semibold';
     margin-bottom: 1rem;
 }
+.popup-content-scroller{
+    height: 100%;
+    overflow: auto;
+}
 
 .leftalig-nmt0{
     margin-top: 0;
     text-align: left;
+}
+
+.top-mobile-menu-button{
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px 0px rgba(102, 102, 102, 0.6);
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(102, 102, 102, 0.6);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(102, 102, 102, 0.6);
+}
+.top-mobile-menu-button #mobileMenuButton{
+    background: url(../images/menu-symbol.svg);
+    background-repeat: no-repeat;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+}
+.top-mobile-menu-button #mobileMenuButton:focus{
+    outline: none;
+}
+.top-mobile-menu-button.homescreen{
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+}
+.top-mobile-menu-button.homescreen #mobileMenuButton{
+    background: url(../images/menu-symbol-white.svg);
+    background-repeat: no-repeat;
+}
+.top-mobile-menu-button .nav-title h1{
+    font-size: 16px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-family: 'poppins-medium';
+}
+.top-mobile-menu-button .mobile-menu-wrap{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 270px;
+    background-color: #eeeeee;
+    padding:45px 0px;
+}
+.mobile-menu{}
+.mobile-menu-container{
+    background: #FFFFFF;
+    height: 100%;
+    overflow: auto;
+}
+
+.mobile-menu-container .top-menu-item{ 
+    padding: 10px 0px;
+    /*border-bottom: 1px solid #999999;*/
+}
+
+.mobile-menu-container .top-menu-item:last-child{
+    border-bottom:0px;
+}
+.mobile-menu-container .top-menu-item-sep{
+    padding: 0px 20px;
+    margin-top: -1px;
+}
+.mobile-menu-container .top-menu-item-sep hr{
+    margin: 0; 
+    border-top: 1px solid #999999;
+}
+.mobile-menu-container .top-menu-item a{
+    padding: 0 20px;
+    display: block;
+}
+.mobile-menu-container .top-menu-item > a{
+    font-family: 'poppins-medium';
+    font-size: 15px;
+}
+.mobile-menu-container .top-menu-item .sub-menu a{
+    padding: 0 40px;
+    display: block;
+}
+.mobile-menu-container .top-menu-item .sub-menu li{ 
+    padding: 5px 0px;
+}
+.mobile-menu-container a{
+    color: #000000;
+    font-size: 15px;
+}
+.mobile-menu-container a.dlink{
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+.mobile-menu-container .top-menu-item.active, .mobile-menu-container .top-menu-item .sub-menu li.active{
+    background-color: #0072EE;
+}
+.mobile-menu-container .top-menu-item.active a, .mobile-menu-container .top-menu-item .sub-menu li.active a{
+    color: #FFFFFF;
+}
+.mobile-menu-overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.8;
 }
 /*Annimation*/
 
@@ -1042,6 +1152,16 @@ img.aboutBookCover{
   
     to {
         opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes bgImageSlideMobile{
+    from {
+        background-position-x: -500px;
+    }
+  
+    to {
+        background-position-x: -125px;
     }
   }
 

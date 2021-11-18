@@ -42,13 +42,32 @@ $(document).on('click', '#disclaimerClose', function (event) {
 
 $(document).on("click", '.link-tab', function (event) {
     //debugger;
+    var ismobileview = $(this).closest(".top-mobile-menu-button").length>0?true:false;
+    if(ismobileview){
+        $(".mobile-menu").HideElement();
+    }
+    $(".sub-menu li.active").removeClass("active");
+    $("li.top-menu-item.active").removeClass("active")
     if (!$(this).hasClass("active")) {
         var dataid = $(this).attr("data-tabid");
         if(dataid == "slide-aboutthebook"){
             $("body").addClass("black");
+            $(".top-mobile-menu-button").addClass("homescreen")
+            /*if(ismobileview){
+                $(".mobile-menu").HideElement();
+            }*/
+            $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
+            $(".top-mobile-menu-button").find(".nav-title").HideElement();
+            $(this).closest("li.top-menu-item").addClass("active")
         }
         else{
             $("body").removeClass("black");
+            $(".top-mobile-menu-button").removeClass("homescreen")
+            /*if(ismobileview){
+                $(".mobile-menu").HideElement();
+            }*/
+            $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
+            $(".top-mobile-menu-button").find(".nav-title").ShowElement();
         }
         $(".link-tab.active").removeClass("active").attr("aria-selected", "false")
         $(this).addClass("active").attr("aria-selected", "true")
@@ -58,7 +77,18 @@ $(document).on("click", '.link-tab', function (event) {
     }
 });
 
-$(document).on("click", ".left-side-bar .side-nav ul li a", function (event) {
+$(document).on("click", ".left-side-bar .side-nav ul li a, .mobile-menu-container .top-menu-item .sub-menu a", function (event) {
+    var ismobileview = $(this).closest(".top-mobile-menu-button").length>0?true:false;
+    if(ismobileview){
+        
+        $(this).closest(".top-menu-item").find("a.link-tab").trigger("click");
+        $(".mobile-menu").HideElement();
+        $(".sub-menu li.active").removeClass("active");
+        $(this).closest("li").addClass("active")
+        $(this).closest(".top-mobile-menu-button").find(".nav-title h1").text($(this).closest(".top-menu-item").find("a.link-tab").text())
+        $(this).closest(".top-mobile-menu-button").find(".nav-title").ShowElement();
+
+    }
     var panelregion = $(this).attr("panelregion");
     var panelId = $(this).attr("panelid");
     $(".side-nav." + panelregion + " ul li a").removeClass("active").attr("aria-current", "false").removeAttr("aria-describedby");
@@ -133,6 +163,17 @@ $(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerC
         $(this).click();
     }
 });
+
+$(document).on("click", "#mobileMenuButton", function(event){
+    $(".mobile-menu").ShowElement();
+    event.preventDefault();
+	event.stopPropagation();
+})
+$(document).on("click", ".mobile-menu-overlay", function(event){
+    $(".mobile-menu").HideElement();
+    event.preventDefault();
+	event.stopPropagation();
+})
 
 
 

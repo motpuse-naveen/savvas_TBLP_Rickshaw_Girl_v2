@@ -1,15 +1,16 @@
 @media (max-width:1240px) {
-    .popup-left-title{
+    .popup-left-title {
         font-size: 44px;
     }
 }
+
 @media (max-width:1024px) {
     .rikshaw-girl-bg {
         overflow: hidden;
     }
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
     .rikshaw-girl-text {
         position: relative;
         padding-left: 0px;
@@ -25,22 +26,13 @@
         line-height: 170px;
         margin-right: auto;
     }
-    .popup-content-col .col-md-12 .popup-left-title{
+    .popup-content-col .col-md-12 .popup-left-title {
         margin-top: 0;
         text-align: left;
-    }
-    img.aboutBookCover{
-        margin-left: 0px;
     }
 }
 
 @media (max-width: 840px) {
-    /*.content-panel{
-        margin: auto;
-    }
-    .left-side-bar{
-        display: none;
-    }*/
     .author-container {
         position: inherit;
     }
@@ -50,14 +42,9 @@
         padding-top: 145px;
     }
     .rikshaw-girl-bg {
-        background: url(../images/Hero_RickShawGirl_8bit.png);
         background-size: 680px;
-        background-repeat: no-repeat;
         background-position-x: -165px;
         background-position-y: -140px;
-        min-height: 700px;
-        background-color: #000000;
-        position: relative;
     }
     .rikshaw-girl-text {
         position: relative;
@@ -104,10 +91,21 @@
     }
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 760px) {
+    h1.main-heading {
+        font-size: 130px;
+        letter-spacing: -5px;
+        line-height: 130px;
+        padding-left: 20px;
+    }
+    .text-content .card {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    img.aboutBookCover{
+        float: left;
+    }
 }
-
 
 @media (max-width: 730px) {
     .card-body a.card-text {
@@ -118,5 +116,195 @@
     }
     .card-back {
         font-size: 9px;
+    }
+}
+
+@media (max-width: 640px) {
+    .topMenuBar2 {display: none;}
+    .orbit1, .orbit2, .orbit3{display: none;}
+    .left-side-bar{display: none;}
+    .popup-concave-col{display: none;}
+    .popup-content-col{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .content-panel{
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .side-disclamer{
+        position: relative;
+        width: auto;
+    }
+    .content-panel .text-content h2:first-child {
+        padding-top: 10px;
+    }
+    .fixed-head-bar {
+        /*display: none;*/
+        background-color: transparent;
+        background: #000000B2;
+        background: linear-gradient( 180deg, #000000B2 0%, transparent 100%);
+        background: -webkit-linear-gradient( 270deg, #000000B2 0%, transparent 100%);
+        background: -moz-linear-gradient(180deg, #000000B2 0%, transparent 100%);
+    }
+    .top-mobile-menu-button{
+        display: block;
+        padding:20px;
+        padding-bottom: 5px;
+    }
+    .container-fs.bb {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .slide-beforereading, .slide-duringreading, .slide-afterreading{
+        margin-top: 90px !important;
+    }
+    .rikshaw-girl-text{
+        padding-top: 90px;
+        padding-bottom: 10%;
+    }
+    h1.main-heading{
+        font-size: 110px;
+        line-height:110px;
+    }
+    .orbitdiv{
+        position: fixed;
+        height: auto;
+        width: auto;
+        top: 20px;
+        right: 20px;
+        z-index: 91;
+    }
+    .orbitdiv .moreInfo{
+        position: sticky;
+    }
+    .container-fs.slide.slide-aboutthebook {
+        margin-top: 0px;
+    }
+    .rikshaw-girl-bg {
+        background-size: 110%;
+        background-position-x: -28px;
+        background-position-y: -140px;
+    }
+    .award-circle-wrap {
+        padding-left: 0px;
+        padding-top: 0px;
+        position: absolute;
+        right: 10%;
+        top: 41%;
+    }
+    .moreInfo-wrapper {
+        float: left;
+    }
+    .moreInfo-wrapper{
+        width: auto;
+    }
+    .moreInfo-additionaltxt{
+        padding: 20px;
+    }
+    .actbtnFixed {
+        position: absolute;
+        float: right;
+        top: 167px;
+        left: unset;
+        right: 25px;
+    }
+    .author-container .text{
+        font-size: 20px;
+    }
+    .moreInfo-additionaltxt .title{
+        font-size: 19px;
+    }
+    .content-panel .text-content h2{
+        font-size: 32px;
+    }
+    .content-panel .text-content h3{
+        font-size: 22px;
+    }
+    .content-panel .text-content{
+        font-size: 15px;
+    }
+    .blue-button{
+        font-size: 15px;
+        padding: 3px 12px;
+    }
+    .content-panel .text-content h3.blue-heading, .content-panel .text-content p.blue-heading{
+        font-size: 18px;
+    }
+    .aboutauthorHeader{
+        font-size: 24px;
+    }
+    .popup-content-col{
+        font-size: 15px;
+    }
+    .popup-left-title{
+        font-size: 32px;
+    }
+    .popup-content-title{
+        font-size: 22px;
+    }
+}
+@media (max-width: 550px) {
+    h1.main-heading{
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .award-circle-wrap {
+        top: 31%;
+    }
+    img.aboutBookCover{
+        width: 200px;
+    }
+    .aboutBook{
+        float: left;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 430px) {
+    h1.main-heading{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .rikshaw-girl-text {
+        padding-bottom: 0%;
+    }
+    .award-circle-wrap {
+        top: 26%;
+    }
+    .author-container .text{
+        font-size: 20px;
+    }
+    .aboutBookCover-wrap{
+        float: left;
+    }
+    img.aboutBookCover{
+        width: 180px;
+    }
+    .aboutBook{
+        font-size: 14px;
+    }
+}
+@media (max-width: 360px) {
+    .author-container .author-wrap{
+        padding: 10px;
+        padding-top: 145px;
+    }
+    .moreInfo-additionaltxt{
+        padding: 10px;
+    }
+    .orbitdiv{
+        top: 20px;
+        right: 15px;
+    }
+    .aboutBook{
+        float: left;
+    }
+    .actbtnFixed{
+        position: initial;
+        padding-left: 20px;
     }
 }
