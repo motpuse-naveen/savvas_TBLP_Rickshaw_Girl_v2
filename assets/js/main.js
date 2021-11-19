@@ -48,8 +48,12 @@ $(document).on("click", '.link-tab', function (event) {
     }
     $(".sub-menu li.active").removeClass("active");
     $("li.top-menu-item.active").removeClass("active")
+    var dataid = $(this).attr("data-tabid");
+    if(dataid == "slide-aboutthebook"){
+        $(this).closest("li.top-menu-item").addClass("active")
+    }
     if (!$(this).hasClass("active")) {
-        var dataid = $(this).attr("data-tabid");
+        
         if(dataid == "slide-aboutthebook"){
             $("body").addClass("black");
             $(".top-mobile-menu-button").addClass("homescreen")
