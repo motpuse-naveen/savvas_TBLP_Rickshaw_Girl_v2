@@ -162,7 +162,7 @@ $(document).on('click', '#aboutauthorClose', function (event) {
 	event.stopPropagation();
 });
 
-$(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerClose', function (event) {
+$(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerClose, .moreInfo', function (event) {
     if(event.which == 13 || event.which == 32) {
         $(this).click();
     }

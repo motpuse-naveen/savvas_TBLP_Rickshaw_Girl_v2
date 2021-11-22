@@ -29,7 +29,7 @@
                 <ul class="menu d-flex">
                     <li class="flex-fill">
                         <a href="#" id="tablinkaboutthebook" class="link-tab uppercase active "
-                            data-tabid="slide-aboutthebook" slideNumber="1" role="tab" aria-selected="true"
+                            data-tabid="slide-aboutthebook" slideNumber="1" role="button" aria-selected="true"
                             aria-controls="slide-aboutthebook">About The Book</a>
                     </li>
                     <li class="flex-fill">
@@ -139,7 +139,7 @@
                 <div class="orbit1 annim-orbit1"></div>
                 <div class="orbit2 annim-orbit2"></div>
                 <div class="orbit3 annim-orbit3"></div>
-                <div class="moreInfo">
+                   <div class="moreInfo" role="button" tabindex="0">
                     <a class="linkmoreinfo">More Info</a>
                     <i class="fa fa-plus-circle moreinfoicon" aria-hidden="true"></i>
                 </div>
@@ -152,7 +152,7 @@
                     <span class="text">Author: Mitali Perkins</span>
                     <span class="image">
                         <img src="assets/images/AdobeStock_266295896_Preview@2x.png" style="width:78px;"
-                            alt="Author: Mitali Perkins">
+                            alt="Author: Mitali Perkins" aria-hidden="true">
                     </span>
                 </div>
             </div>
@@ -163,13 +163,13 @@
                             <p class="title">
                                 Read about what a young girl discovers about gender when she disguises herself as a boy!
                             </p>
-                            <p class="subtitle">
+                            <blockquote>
                                 “A child-eye's view of Bangladesh that makes a strong and accessible statement about
                                 heritage, tradition and the changing role of women, Naima's story will be relished by
                                 students and teachers alike.”
                                 <br>
                                 –Kirkus Reviews
-                            </p>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -485,7 +485,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Setting Switch</h4>
+                                    <h3>Setting Switch</h3>
                                     <p>Prompt students to think about how the story would change if it took place in
                                         another
                                         setting.</p>
@@ -497,7 +497,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Journal Share</h4>
+                                    <h3>Journal Share</h3>
                                     <p>Have students share their letters and make a list of ideas to convince Naima’s
                                         parents.</p>
                                 </div>
@@ -506,7 +506,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Author’s Craft: Word Sort</h4>
+                                    <h3>Author’s Craft: Word Sort</h3>
                                     <p>Have students work in groups or pairs to complete a word sort activity followed
                                         by a
                                         discussion of the author’s use of adverbs to convey emotion and describe vivid
@@ -758,7 +758,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-5 col-sm-12">
                             <div class="aboutBookCover-wrap">
-                                <img class="aboutBookCover" src="assets/images/RikshawGirlBookCover.png">
+                                <img class="aboutBookCover" src="assets/images/RikshawGirlBookCover.png" alt="Rickshaw Girl">
                             </div>
                             <div class="aboutBook flex-column">
                                 <p><span class="bold">Title:</span> Rickshaw Girl</p>
@@ -781,7 +781,7 @@
                         </div>
                         <div class="col-lg-8 col-md-7 col-sm-12">
                             <div class="aboutBookContent">
-                                <h1 tabindex="-1" class="aboutauthorHeader">Plot Overview</h1>
+                                <h2 tabindex="-1" class="aboutauthorHeader">Plot Overview</h2>
                                 <p>
                                     Naima is a ten-year-old girl from Bangladesh who desperately wants to help her
                                     struggling
@@ -816,7 +816,7 @@
                                         turned
                                         out to be a girl.</i>
                                 </p>
-                                <h1 class="aboutauthorHeader">Theme Overview </h1>
+                                <h2 class="aboutauthorHeader">Theme Overview </h2>
                                 <p>
                                     <span class="bold">Gender Roles</span> An important theme in Rickshaw Girl is the
                                     book’s
@@ -840,7 +840,7 @@
                 </div>
             </div>
         </div>
-        <i id="aboutauthorClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0"></i>
+        <i id="aboutauthorClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup disclaimer disnone" aria-hidden="true">
         <div class="row popup-main-row">
@@ -850,7 +850,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-content-title">Disclaimer</h1>
+                            <h2 tabindex="-1" class="popup-content-title">Disclaimer</h2>
                             <p>
                                 By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter
                                 into
@@ -875,7 +875,7 @@
                 </div>
             </div>
         </div>
-        <i id="disclaimerClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0"></i>
+        <i id="disclaimerClose" class="far fa-times-circle popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-br-3  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -885,7 +885,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-left-title">Activity Support</h1>
+                            <h2 tabindex="-1" class="popup-left-title" >Activity Support</h2>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 tabindex="-1" class="popup-content-title">Four Corners</h2>
@@ -932,7 +932,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-dr-1  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -942,7 +942,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-left-title">Activity Support</h1>
+                            <h2 tabindex="-1" class="popup-left-title">Activity Support</h2>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 tabindex="-1" class="popup-content-title">Unlock a Key Sentence</h2>
@@ -1015,7 +1015,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-dr-21  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -1025,7 +1025,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-left-title">Activity Support</h1>
+                            <h2 tabindex="-1" class="popup-left-title">Activity Support</h2>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 tabindex="-1" class="popup-content-title">Setting Switch</h2>
@@ -1040,7 +1040,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-dr-22  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -1050,7 +1050,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-left-title">Activity Support</h1>
+                            <h2 tabindex="-1" class="popup-left-title">Activity Support</h2>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 tabindex="-1" class="popup-content-title">Author’s Craft: Word Sort</h2>
@@ -1163,7 +1163,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-dr-3  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -1173,7 +1173,7 @@
                 <div class="popup-content-scroller">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1 tabindex="-1" class="popup-left-title">Activity Support</h1>
+                            <h2 tabindex="-1" class="popup-left-title">Activity Support</h2>
                         </div>
                         <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 tabindex="-1" class="popup-content-title">Author’s Craft: Loan Words</h2>
@@ -1196,7 +1196,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-ar-31  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -1316,7 +1316,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div class="container-fs-popup activitySupport popup-ar-32  disnone " aria-hidden="true">
         <div class="row popup-main-row">
@@ -1387,7 +1387,7 @@
                 </div>
             </div>
         </div>
-        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0"></i>
+        <i class="far fa-times-circle ac-popup-close-btn" role="button" tabindex="0" aria-label="close"></i>
     </div>
     <div id="selectedMenuText" class="sr-only" aria-hidden="true">Selected </div>
     <script src="assets/js/utility.js"></script>

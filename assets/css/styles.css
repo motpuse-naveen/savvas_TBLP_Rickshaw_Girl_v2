@@ -18,7 +18,7 @@ a {
 }
 
 a:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 body, html {
@@ -135,7 +135,7 @@ body, html {
 }
 
 .topMenuBar2 .menu li a:focus {
-    outline: none;
+   /*outline: none;*/
 }
 
 .topMenuBar2 .menu li a:hover, .topMenuBar2 .menu li a.active {
@@ -220,7 +220,7 @@ body, html {
 }
 
 .side-nav ul li a:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .side-nav ul li a:hover, .side-nav ul li a.active {
@@ -293,7 +293,7 @@ body, html {
 }
 
 .link-learmore:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .content-panel {
@@ -670,13 +670,22 @@ h1.main-heading {
     color: #FFFFFF;
 }
 
-.moreInfo-additionaltxt .subtitle {
+/*.moreInfo-additionaltxt .subtitle {
+    font-family: 'poppins-lightitalic';
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    line-height: 28px;
+}*/
+
+blockquote {
     font-family: 'poppins-lightitalic';
     font-size: 15px;
     color: #FFFFFF;
     margin-top: 2rem;
     line-height: 28px;
 }
+
 .moreinfoicon{
     font-size: 26px;
     border: 3px solid #FFF;
@@ -971,7 +980,7 @@ img.aboutBookCover{
     height: 30px;
 }
 .top-mobile-menu-button #mobileMenuButton:focus{
-    outline: none;
+    /*outline: none;*/
 }
 .top-mobile-menu-button.homescreen{
     background-color: transparent;
