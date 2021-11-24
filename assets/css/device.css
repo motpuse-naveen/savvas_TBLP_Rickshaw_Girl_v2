@@ -31,6 +31,11 @@
         text-align: left;
     }
 }
+@media (max-width: 990px) {
+    .author-container .author-wrap{
+        padding-right: 30px;
+    }
+}
 
 @media (max-width: 840px) {
     .author-container {
@@ -98,6 +103,14 @@
         line-height: 130px;
         padding-left: 20px;
     }
+    
+    .author-container .author-wrap{
+        padding-top: 220px;
+    }
+    .moreInfo-container {
+        margin-top: 150px;
+    }
+    
     .text-content .card {
         height: auto;
         margin-bottom: 1rem;
@@ -116,6 +129,12 @@
     }
     .card-back {
         font-size: 9px;
+    }
+    .author-container .author-wrap{
+        padding-top: 145px;
+    }
+    .moreInfo-container {
+        margin-top: 150px;
     }
 }
 
@@ -180,7 +199,7 @@
         z-index: 91;
     }
     .orbitdiv .moreInfo{
-        position: sticky;
+        position: unset;
     }
     .container-fs.slide.slide-aboutthebook {
         margin-top: 0px;
@@ -306,5 +325,17 @@
     .actbtnFixed{
         position: initial;
         padding-left: 20px;
+    }
+}
+@media (max-width: 360px) {
+    h1.main-heading {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .author-container .text {
+        font-size: 16px;
+    }
+    .moreInfo-additionaltxt .title {
+        font-size: 16px;
     }
 }
