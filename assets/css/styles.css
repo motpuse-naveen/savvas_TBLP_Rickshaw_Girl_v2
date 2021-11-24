@@ -247,7 +247,15 @@ body, html {
 }
 
 .side-nav.br ul li a {
-    color: #00000080;
+    color: #594E36;
+}
+
+.side-nav.dr ul li a.nrcolor, .side-nav.ar ul li a.nrcolor {
+    color: #EFCDCD;
+}
+
+.side-nav.dr ul li a.decolor, .side-nav.ar ul li a.decolor {
+    color: #D0DDF0;
 }
 
 .side-nav.br ul li a:hover, .side-nav.br ul li a.active {
@@ -256,17 +264,26 @@ body, html {
 
 .side-nav.dr ul li, .side-nav.ar ul li {
     color: #FFFFFF80;
-    ;
 }
 
 .side-nav.dr ul li a, .side-nav.ar ul li a {
     color: #FFFFFF80;
-    ;
 }
 
 .side-nav.dr ul li a:hover, .side-nav.dr ul li a.active, .side-nav.ar ul li a:hover, .side-nav.ar ul li a.active {
     color: #FFFFFF;
 }
+
+a {
+    color: #006BE0;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0056b3; 
+}
+
 
 .side-disclamer {
     font-family: "poppins-regular";
@@ -946,7 +963,7 @@ img.aboutBookCover{
 }
 .popup-left-title{
     font-family: 'poppins-semibold';
-    color: #597CBE91;
+    color: #486FB1;
     font-size: 66px;
     margin-top: 6rem;
     text-align: center;
