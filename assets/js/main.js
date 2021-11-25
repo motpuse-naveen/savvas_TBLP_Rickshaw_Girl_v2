@@ -143,7 +143,7 @@ $(document).on('click', '.ac-popup-close-btn', function (event) {
 });
 
 $(document).on('click', '.moreInfo', function (event) {
-    event.preventDefault();
+    //event.preventDefault();
     var popupref = $(this).attr("popupref")
     $('.container-fs-popup.aboutauthor').ShowElement();
     $(".aboutauthorHeader:first").focus();
