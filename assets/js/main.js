@@ -146,7 +146,7 @@ $(document).on('click', '.moreInfo', function (event) {
     //event.preventDefault();
     var popupref = $(this).attr("popupref")
     $('.container-fs-popup.aboutauthor').ShowElement();
-    $(".aboutauthorHeader:first").focus();
+    $(".aboutBookCover").focus();
     $(".container-fs").HideElement();
     lastFocusedElement = $(this)
     event.preventDefault();
