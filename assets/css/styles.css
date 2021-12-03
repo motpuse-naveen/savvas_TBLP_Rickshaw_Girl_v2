@@ -665,9 +665,12 @@ h1.main-heading {
 }
 .moreInfo {
     position: absolute;
-    top: 107px;
-    left: 15px;
+    top: 100px;
+    left: 10px;
     z-index: 91;
+    background: transparent;
+    border-style: none;
+    height: 36px;
 }
 
 .moreInfo .linkmoreinfo {

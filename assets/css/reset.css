@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	/*line-height: 1;*/
 }
 
 ol, ul {
@@ -132,7 +132,9 @@ html {
 a:focus {
    /* outline: thin dotted;*/
 }
-
+button:focus{
+    outline: 0px;
+}
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
@@ -366,7 +368,8 @@ textarea {
 }
 
 :root {
-    --focus-gold: #0678F4;
+    --focus-gold: #000000;
+    --focus-white:#FFFFFF;
   }
   
   :focus-visible  {
@@ -377,7 +380,7 @@ textarea {
     outline: 2px solid var(--focus-gold);
   }
   button:focus-visible{
-    outline: 2px solid var(--focus-gold) !important;
+    outline: 2px solid var(--focus-gold);
   }
   .popup-content-scroller a:focus-visible {
     border: 2px solid var(--focus-gold);
@@ -390,6 +393,13 @@ textarea {
   .popup-content-scroller button:focus-visible {
     border: 2px solid var(--focus-gold);
     outline:none;
+  }
+  .moreInfo:focus-visible{
+    outline: 2px solid var(--focus-white);
+  }
+  .slide-duringreading .left-side-bar .side-nav ul li a:focus-visible, 
+  .slide-afterreading .left-side-bar .side-nav ul li a:focus-visible {
+    outline: 2px solid var(--focus-white);
   }
   /*
   button:focus:not(:focus-visible),   a:focus:not(:focus-visible)  {
