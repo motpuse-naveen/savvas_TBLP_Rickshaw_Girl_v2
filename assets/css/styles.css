@@ -986,6 +986,8 @@ img.aboutBookCover{
     font-size: 66px;
     margin-top: 6rem;
     text-align: center;
+    margin: 15px 0px;
+    line-height: 1.5;
 }
 .popup-content-title{
     font-family: 'poppins-semibold';
