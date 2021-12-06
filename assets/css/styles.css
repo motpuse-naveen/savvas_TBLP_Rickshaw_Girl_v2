@@ -640,6 +640,7 @@ h1.main-heading {
     position: absolute;
     right: 0px;
     top: 20px;
+    z-index: 1;
 }
 
 .author-container .author-wrap {

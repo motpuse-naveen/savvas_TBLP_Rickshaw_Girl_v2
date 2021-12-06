@@ -345,10 +345,8 @@
         position: initial;
         padding-left: 20px;
     }
-}
-@media (max-width: 360px) {
     h1.main-heading {
-        font-size: 58px;
+        font-size: 46px;
         line-height: 58px;
     }
     .author-container .text {
