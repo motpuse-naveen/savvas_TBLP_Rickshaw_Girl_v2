@@ -85,6 +85,7 @@
     }
     .author-wrap span.text {
         margin: 15px;
+        margin-top: -24px;
         padding-top: 20px;
     }
     .orbitdiv {
@@ -94,12 +95,16 @@
         width: 234px;
         height: 234px;
     }
+    .orbitdiv-button{
+        right: -47px;
+        top:-284px;
+    }
 }
 
 @media (max-width: 760px) {
     h1.main-heading {
         font-size: 130px;
-        letter-spacing: -5px;
+        letter-spacing: 0px;
         line-height: 130px;
         padding-left: 20px;
     }
@@ -117,6 +122,9 @@
     }
     img.aboutBookCover{
         float: left;
+    }
+    .orbitdiv-button{
+        top: -255px;
     }
 }
 
@@ -136,6 +144,7 @@
     .moreInfo-container {
         margin-top: 150px;
     }
+    
 }
 
 @media (max-width: 640px) {
@@ -198,6 +207,16 @@
         right: 20px;
         z-index: 91;
     }
+    .orbitdiv-button{
+        position: fixed;
+        height: auto;
+        width: auto;
+        top: 20px;
+        right: 20px;
+        z-index: 91;
+    }
+    .orbitdiv button.moreInfo{display: block;}
+    .orbitdiv-button button.moreInfo{display: none;}
     .orbitdiv .moreInfo{
         position: unset;
     }
@@ -329,8 +348,8 @@
 }
 @media (max-width: 360px) {
     h1.main-heading {
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 58px;
+        line-height: 58px;
     }
     .author-container .text {
         font-size: 16px;
