@@ -1207,11 +1207,11 @@ img.aboutBookCover{
 
   @-webkit-keyframes bgImageSlideMobile{
     from {
-        background-position-y: -500px;
+        background-position-y: -440px;
     }
   
     to {
-        background-position-y: -140px;
+        background-position-y: -110px;
     }
   }
 
