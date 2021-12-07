@@ -285,6 +285,9 @@
     .popup-content-title{
         font-size: 22px;
     }
+    .annim-bg-image {
+        animation: bgImageSlideMobile 2s normal;
+    }
 }
 @media (max-width: 550px) {
     h1.main-heading{

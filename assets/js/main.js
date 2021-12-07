@@ -45,6 +45,7 @@ $(document).on("click", '.link-tab', function (event) {
     var ismobileview = $(this).closest(".top-mobile-menu-button").length>0?true:false;
     if(ismobileview){
         $(".mobile-menu").HideElement();
+        $(".orbitdiv").removeClass("moreinfolowerzindex")
     }
     $(".sub-menu li.active").removeClass("active");
     $("li.top-menu-item.active").removeClass("active")
@@ -59,6 +60,7 @@ $(document).on("click", '.link-tab', function (event) {
             $(".top-mobile-menu-button").addClass("homescreen")
             /*if(ismobileview){
                 $(".mobile-menu").HideElement();
+                $(".orbitdiv").removeClass("moreinfolowerzindex")
             }*/
             $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
             $(".top-mobile-menu-button").find(".nav-title").HideElement();
@@ -69,6 +71,7 @@ $(document).on("click", '.link-tab', function (event) {
             $(".top-mobile-menu-button").removeClass("homescreen")
             /*if(ismobileview){
                 $(".mobile-menu").HideElement();
+                $(".orbitdiv").removeClass("moreinfolowerzindex")
             }*/
             $(".top-mobile-menu-button").find(".nav-title h1").text($(this).text())
             $(".top-mobile-menu-button").find(".nav-title").ShowElement();
@@ -87,6 +90,7 @@ $(document).on("click", ".left-side-bar .side-nav ul li a, .mobile-menu-containe
         
         $(this).closest(".top-menu-item").find("a.link-tab").trigger("click");
         $(".mobile-menu").HideElement();
+        $(".orbitdiv").removeClass("moreinfolowerzindex")
         $(".sub-menu li.active").removeClass("active");
         $(this).closest("li").addClass("active")
         $(this).closest(".top-mobile-menu-button").find(".nav-title h1").text($(this).closest(".top-menu-item").find("a.link-tab").text())
@@ -162,7 +166,7 @@ $(document).on('click', '#aboutauthorClose', function (event) {
 	event.stopPropagation();
 });
 
-$(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerClose, .moreInfo', function (event) {
+$(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerClose', function (event) {
     if(event.which == 13 || event.which == 32) {
         $(this).click();
     }
@@ -170,11 +174,13 @@ $(document).on('keypress', '#aboutauthorClose, .ac-popup-close-btn, #disclaimerC
 
 $(document).on("click", "#mobileMenuButton", function(event){
     $(".mobile-menu").ShowElement();
+    $(".orbitdiv").addClass("moreinfolowerzindex")
     event.preventDefault();
 	event.stopPropagation();
 })
 $(document).on("click", ".mobile-menu-overlay", function(event){
     $(".mobile-menu").HideElement();
+    $(".orbitdiv").removeClass("moreinfolowerzindex")
     event.preventDefault();
 	event.stopPropagation();
 })
