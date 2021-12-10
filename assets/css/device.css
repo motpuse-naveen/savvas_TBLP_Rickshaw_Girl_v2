@@ -99,6 +99,9 @@
         right: -47px;
         top:-284px;
     }
+    .moreInfo{
+        top: 100px;
+    }
 }
 
 @media (max-width: 760px) {
