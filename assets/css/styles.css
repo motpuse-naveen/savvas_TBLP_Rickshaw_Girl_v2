@@ -411,20 +411,6 @@ h3.blue-heading .playicon, p.blue-heading .playicon {
     margin-bottom: 10px;
 }
 
-ul {
-    margin: 0;
-  }
-  ul.dashed {
-    list-style-type: none;
-  }
-  ul.dashed > li {
-    text-indent: 33px;
-  }
-  ul.dashed > li:before {
-    content: "-";
-    text-indent: -5px;
-  }
-
 ul.small-bullet {
     margin-left: 30px;
 }
@@ -640,12 +626,10 @@ table.table-style2 .trbg {
     padding-left: 105px;
     z-index: 12;
 }
-.longl{
-    letter-spacing: -3px;
-}
+
 h1.main-heading {
     font-family: 'poppins-semibold';
-    font-size: 125px;
+    font-size: 190px;
     text-shadow: 15px 0px 47px rgb(0 0 0);
     color: #FFFFFF;
     letter-spacing: -10px;
