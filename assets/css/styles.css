@@ -298,7 +298,10 @@ a:hover {
     bottom: 0;
     width: 165px;
 }
-
+.side-disclamer .disctext {
+    font-size: 11px !important;
+    margin-right: 5px !important;
+}
 .bold {
     font-family: "poppins-bold";
 }
