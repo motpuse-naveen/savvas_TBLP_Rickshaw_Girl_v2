@@ -41,10 +41,11 @@
     .author-container {
         position: inherit;
     }
+    /*NM: 11-05-2022*/
     .author-container .author-wrap {
         float: left;
         padding: 20px;
-        padding-top: 145px;
+        /*padding-top: 145px;*/
     }
     .rikshaw-girl-bg {
         background-size: 680px;
@@ -72,12 +73,14 @@
         width: 370px;
         margin-top: 0px;
     }
+    /*NM: 11-05-2022*/
     .moreInfo-container {
-        margin-top: 100px;
+        margin-top: 0px;
     }
+    /*NM: 11-05-2022*/
     .award-circle-wrap {
         padding-left: 100px;
-        padding-top: 160px
+        padding-top: 20px
     }
     .author-wrap span.image {
         float: left;
@@ -99,8 +102,17 @@
         right: -47px;
         top:-284px;
     }
+    /*NM: 11-05-2022*/
     .moreInfo{
-        top: 100px;
+        top: 191px;
+    }
+    /*NM: 11-05-2022*/
+    .moreInfo-additionaltxt {
+        padding: 40px 28px;
+    }
+    /*NM: 11-05-2022*/
+    .bg-image-opacity{
+        display: block;
     }
 }
 
@@ -111,12 +123,13 @@
         line-height: 130px;
         padding-left: 20px;
     }
-    
+    /*NM: 11-05-2022*/
     .author-container .author-wrap{
-        padding-top: 220px;
+        padding-top: 10px;
     }
+    /*NM: 11-05-2022*/
     .moreInfo-container {
-        margin-top: 150px;
+        margin-top: 0px;
     }
     
     .text-content .card {
@@ -126,8 +139,14 @@
     img.aboutBookCover{
         float: left;
     }
+    /*NM: 11-05-2022*/
     .orbitdiv-button{
-        top: -255px;
+        top: -204px;
+    }
+    /*NM: 11-05-2022*/
+    .moreInfo-additionaltxt {
+        padding: 115px 28px;
+        padding-bottom: 0px;
     }
 }
 
@@ -141,11 +160,13 @@
     .card-back {
         font-size: 9px;
     }
+    /*NM: 11-05-2022*/
     .author-container .author-wrap{
-        padding-top: 145px;
+        padding-top: 10px;
     }
+    /*NM: 11-05-2022*/
     .moreInfo-container {
-        margin-top: 150px;
+        margin-top: 0px;
     }
     
 }
@@ -155,6 +176,18 @@
     .orbit1, .orbit2, .orbit3{display: none;}
     .left-side-bar{display: none;}
     .popup-concave-col{display: none;}
+    /*NM: 11-05-2022*/
+    .author-container.desktop{
+        display: none;
+    }
+    /*NM: 11-05-2022*/
+    .author-container.mobile{
+        display: block;
+    }
+    /*NM: 11-05-2022*/
+    .author-container.mobile .author-wrap {
+        padding-top: 140px;
+    }
     .popup-content-col{
         flex: 0 0 100%;
         max-width: 100%;
